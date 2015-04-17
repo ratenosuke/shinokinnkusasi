@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -23,5 +24,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+-(IBAction)plus{
+    number=number+1;
+    label.text=[NSString stringWithFormat:@"%d",number];
+    {
+        if (number>=10)
+            label.textColor = [UIColor redColor] ;
+    }
+}
+
+
+-(IBAction)mainasu{
+    number=number-1;
+    label.text=[NSString stringWithFormat:@"%d",number];
+    
+}
+
+-(IBAction)kuria{
+    number=0;
+     label.text=[NSString stringWithFormat:@"%d",number];
+    
+}
+
+
+
+
+
+
+
 
 @end
